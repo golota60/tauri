@@ -220,7 +220,9 @@ pub use self::utils::TitleBarStyle;
 #[cfg_attr(doc_cfg, doc(cfg(feature = "system-tray")))]
 pub use {
   self::app::tray::{SystemTray, SystemTrayEvent, SystemTrayHandle},
-  self::runtime::menu::{SystemTrayMenu, SystemTrayMenuItem, SystemTraySubmenu},
+  self::runtime::menu::{
+    SystemTrayMenu, SystemTrayMenuEntry, SystemTrayMenuItem, SystemTraySubmenu,
+  },
 };
 pub use {
   self::app::WindowMenuEvent,
